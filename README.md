@@ -14,7 +14,7 @@ Python 2.6 (or better) and virtualenv is all you need.
 4. `source venv/bin/activate`
 5. `pip install -r requirements.txt`
 
-To use run the command as `python bwmoni.py {username} {password}`
+To use run the command as `python bwmoni.py {username} {password}` or if you want to have a command you can link to /usr/local, chmod +x and use `bwmonitor.sh`
 
 ## License
 Licensed under MIT. See LICENSE.md
