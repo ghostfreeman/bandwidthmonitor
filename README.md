@@ -14,7 +14,15 @@ Python 2.6 (or better) and virtualenv is all you need.
 4. `source venv/bin/activate`
 5. `pip install -r requirements.txt`
 
-To use run the command as `python bwmoni.py {username} {password}` or if you want to have a command you can link to /usr/local, chmod +x and use `bwmonitor.sh`
+To use run the command as `python bwmoni.py {username} {password}` or if you want to have a command you can link to /usr/local, chmod +x and use `bwmonitor.sh {username} {password}`.
+
+## Possible issues
+It may occassionaly return a "list index out of range" error. If this occurs, try again. A race condition could be the cause that unfortunately, is beyond my control. Should it repeatedly occur, check your authentication settings to be sure they are correct.
+
+The script may produce additional issues if anything besides a 200 OK is retrieved. The most common cause of this is insufficient/incorrect authentication credentials.
+
+## Enhancements
+The script is feature-complete as far as I am concerned. If you want to improve it, go ahead.
 
 ## License
 Licensed under MIT. See LICENSE.md
