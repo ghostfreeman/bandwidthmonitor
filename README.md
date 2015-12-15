@@ -1,13 +1,13 @@
 # Bandwidth Monitor
 
-This simple script accesses the data usage stats from Netgear routers, and displays it to the terminal. It was designed to make this process a lot easier.
+This simple script accesses the data usage stats from Netgear routers (via page scraping), and displays it to the terminal. It was designed to make this process a lot easier.
 
 To use this, you will need to enable Traffic Meter on your Netgear router.
 
-This application is designed to work with stock firmware. If you are using DD-WRT, or another brand of router, then stop reading and find something that will work with that brand of router.
+*I make no guarantee this will work on all Netgear routers.* I've only tested it on the WNDR3700 series. This application is designed to work with stock Netgear firmware, from all routers 2012 and onward. If you are using DD-WRT/Tomato/Monowall/Etc, or another brand of router, then stop reading and find something that will work with that brand of router.
 
 ## Requirements
-Python 2.6 (or better) and virtualenv is all you need.
+Python 2.6 (or better) and virtualenv is all you need. Request and BeautifulSoup are installed as dependencies.
 
 ## Installation
 1. Clone this Git Repo
