@@ -12,6 +12,8 @@ if total == 3:
   # Pull out the data showing data used this month
   bandwidth = soup.select("td[width=85]")[1]
   bwstr = bandwidth.contents[0]
-  print "Total amount of bandwidth used this month: "+bwstr.split("/")[0]+" MBytes."
+  bwMeg = int(bwstr.split("/")[0])
+  bwGig = round((bwMeg / 1024), 1)
+  print "Total amount of bandwidth used this month: "+str(bwGig)+" GB ("+str(bwMeg)+" MBytes)"
 else:
   print "Insufficient arguments. See README.md"
