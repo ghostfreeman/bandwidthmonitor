@@ -17,7 +17,6 @@ if total == 3:
 
   response2 = requests.get("http://routerlogin.net/traffic_meter.htm", auth=(sys.argv[1], sys.argv[2]))
   soup2 = bs4.BeautifulSoup(response2.text, "html.parser")
-  #import pdb; pdb.set_trace()
   bwToday = soup2.select("td[width=20%] p")[1]
   bwTodayCont = bwToday.contents[0]
 
