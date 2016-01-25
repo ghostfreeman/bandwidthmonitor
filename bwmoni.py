@@ -19,8 +19,9 @@ if total == 3:
   soup2 = bs4.BeautifulSoup(response2.text, "html.parser")
   bwToday = soup2.select("td[width=17%] p")[3]
   bwTodayCont = bwToday.contents[0]
+  bwTodayGig = int(bwTodayCont) / 1024
 
   print "Total amount of bandwidth used this month: "+str(bwGig)+" GB ("+str(bwMeg)+" MBytes)"
-  print "Total used today: "+str(bwTodayCont)+" MBytes"
+  print "Total used today: "+str(bwTodayGig)+" GB ("+str(bwTodayCont)+" MBytes)"
 else:
   print "Insufficient arguments. See README.md"
